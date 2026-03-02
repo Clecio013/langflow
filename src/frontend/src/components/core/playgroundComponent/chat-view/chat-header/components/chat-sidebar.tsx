@@ -161,6 +161,7 @@ export function ChatSidebar({
                     <div
                       className="flex items-center gap-2 cursor-pointer"
                       onClick={handleSelectAll}
+                      data-testid="select-all-checkbox"
                     >
                       <div className="flex items-center justify-center w-4 h-4 flex-shrink-0">
                         <ForwardedIconComponent
@@ -169,7 +170,6 @@ export function ChatSidebar({
                             "h-4 w-4",
                             allSelected ? "text-status-red" : "text-muted-foreground"
                           )}
-                          data-testid="select-all-checkbox"
                         />
                       </div>
                       <span className="text-sm text-muted-foreground select-none">
